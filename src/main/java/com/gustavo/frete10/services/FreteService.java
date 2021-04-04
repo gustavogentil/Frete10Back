@@ -34,9 +34,8 @@ public class FreteService {
 		return list;
 	}
 
-	public List<Frete> create() {
-		
-		return null;
+	public void  delete(Integer id) {
+		repository.deleteById(id);
 	}
 
 	public Frete create(Frete obj) {
